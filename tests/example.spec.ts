@@ -17,5 +17,6 @@ test('Correctly placing an order for product. And removing product from cart ', 
   await expect.soft(page.locator('[data-test="item-quantity"]')).toHaveText('1');
   await basket.deleteProduct();
   await expect.soft(page.locator('[data-test="shopping-cart-link"]')).toHaveText('');
+
 });
 
